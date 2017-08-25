@@ -1,0 +1,18 @@
+<%- include header.ejs %>
+
+  <h1>Login</h1>
+
+  <form method="post" action="/login" class="login-form">
+    <pre class="new-contact-form-errors"></pre>
+    <label>
+      <span>Username:</span>
+      <input type="text" name="username" />
+    </label>
+    <label>
+      <span>Password:</span>
+      <input type="password" name="password" />
+    </label>
+    <input type="submit" value="Login">
+  </form>
+
+<%- include footer.ejs %>

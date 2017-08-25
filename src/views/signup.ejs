@@ -1,0 +1,23 @@
+<%- include header.ejs %>
+
+  <h1>Sign up</h1>
+
+  <form method="post" action="/signup" class="signup-form">
+    <pre class="new-contact-form-errors"></pre>
+    <label>
+      <span>Username:</span>
+      <input type="text" name="username" />
+    </label>
+    <label>
+      <span>Password:</span>
+      <input type="password" name="password" />
+    </label>
+    <label>
+      <span>Role:</span>
+      <input type="radio" name="role" value="regular" checked> Regular
+      <input type="radio" name="role" value="admin"> Admin<br>
+    </label>
+    <input type="submit" value="Sign up">
+  </form>
+
+<%- include footer.ejs %>
